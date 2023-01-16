@@ -1,0 +1,9 @@
+
+SUBDIR := HAL
+
+all: $(SUBDIR)
+
+$(SUBDIR):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+.PHONY: $(SUBDIR)
